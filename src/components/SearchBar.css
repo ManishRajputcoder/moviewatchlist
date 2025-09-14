@@ -1,0 +1,27 @@
+.search-input {
+  padding: 10px;
+  width: 60%;
+  margin: 20px auto;
+  display: block;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease; /* smooth resizing */
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .search-input {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .search-input {
+    width: 95%;
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}

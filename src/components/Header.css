@@ -1,0 +1,76 @@
+/* Base Mobile Styles — always row */
+.header {
+  display: flex;
+  flex-direction: row; /* stay side by side on all screens */
+  justify-content: space-between; /* logo left, button right */
+  align-items: center;
+  background-color: #0e0e0e;
+  color: white;
+  padding: 12px 15px; /* smaller padding on mobile */
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.6rem; /* smaller on mobile */
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffcc00;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logo span {
+  color: white;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 8px rgba(255, 204, 0, 0.6);
+}
+
+/* Watchlist button */
+.watchlist-btn {
+  background-color: red;
+  color: white;
+  padding: 6px 12px; /* smaller on mobile */
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Tablet breakpoint (≥768px) */
+@media (min-width: 768px) {
+  .header {
+    padding: 15px 25px;
+  }
+
+  .logo {
+    font-size: 1.9rem;
+  }
+
+  .watchlist-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop breakpoint (≥1024px) */
+@media (min-width: 1024px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  .watchlist-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+}

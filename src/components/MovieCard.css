@@ -1,0 +1,157 @@
+/* ====== Movie Card ====== */
+.movie-card {
+  width: 100%; /* mobile full width */
+  max-width: 200px;
+  background-color: #1a1a1a;
+  color: white;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto; /* responsive height */
+  aspect-ratio: 2 / 3; /* keeps proportion */
+  object-fit: cover;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+}
+
+.movie-info {
+  padding: 10px;
+}
+
+.movie-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+.movie-info p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.watchlist-toggle {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.watchlist-toggle:hover {
+  background-color: #e6b800;
+}
+
+/* Tablet ≥768px: allow bigger cards */
+@media (min-width: 768px) {
+  .movie-card {
+    max-width: 220px;
+  }
+  .movie-info h4 {
+    font-size: 1.1rem;
+  }
+  .watchlist-toggle {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop ≥1024px */
+@media (min-width: 1024px) {
+  .movie-card {
+    max-width: 250px;
+  }
+  .movie-info h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ====== Movie Modal Overlay ====== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* ====== Modal Box ====== */
+.modal-box {
+  background: #1c1c1c;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; /* mobile default */
+  gap: 20px;
+  position: relative;
+}
+
+.modal-poster {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.modal-details {
+  flex: 1;
+  text-align: left;
+}
+
+.modal-overview {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: transparent;
+  color: white;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tablet ≥768px: side-by-side layout */
+@media (min-width: 768px) {
+  .modal-box {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .modal-poster {
+    max-width: 150px;
+  }
+}
+
+/* Desktop ≥1024px */
+@media (min-width: 1024px) {
+  .modal-poster {
+    max-width: 180px;
+  }
+}
