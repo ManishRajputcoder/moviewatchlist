@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/moviewatchlist/static/css/main.2054ce9b.css",
-    "main.js": "/moviewatchlist/static/js/main.0b09aa25.js",
+    "main.js": "/moviewatchlist/static/js/main.1219a044.js",
     "static/js/453.b198d05d.chunk.js": "/moviewatchlist/static/js/453.b198d05d.chunk.js",
     "index.html": "/moviewatchlist/index.html",
     "main.2054ce9b.css.map": "/moviewatchlist/static/css/main.2054ce9b.css.map",
-    "main.0b09aa25.js.map": "/moviewatchlist/static/js/main.0b09aa25.js.map",
+    "main.1219a044.js.map": "/moviewatchlist/static/js/main.1219a044.js.map",
     "453.b198d05d.chunk.js.map": "/moviewatchlist/static/js/453.b198d05d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2054ce9b.css",
-    "static/js/main.0b09aa25.js"
+    "static/js/main.1219a044.js"
   ]
 }
